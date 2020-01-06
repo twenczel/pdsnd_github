@@ -1,3 +1,5 @@
+# Bikeshare project 2019
+
 import time
 import pandas as pd
 import numpy as np
@@ -18,7 +20,7 @@ def get_filters():
     """
     print('Hello! Let\'s explore some US bikeshare data!\n')
     # TO DO: get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
-    city = input("Please enter Chicago, New York City, or Washington for the city data you want to see.\n").lower()
+    city = input('Please enter Chicago, New York City, or Washington for the city data you want to see.\n').lower()
       
     while(True):
         if(city == 'chicago' or city == 'new york city' or city == 'washington'):
@@ -112,7 +114,7 @@ def time_stats(df, month, day):
     print('Most popular hour:  ' + str(most_common_hour))
 
 
-    print("\nThis took %s seconds." % (time.time() - start_time))
+    print('\nThis took %s seconds.' % (time.time() - start_time))
     print('-'*40)
 
 
@@ -137,7 +139,7 @@ def station_stats(df):
     print('\nThe most popular trip from start to end:  ', combination_station)
 
     
-    print("\nThis took %s seconds." % (time.time() - start_time))
+    print('\nThis took %s seconds.' % (time.time() - start_time))
     print('-'*40)
 
 
@@ -174,7 +176,7 @@ def trip_duration_stats(df):
     print('\nThe average trip duration is {} hours {} minutes {} seconds'.format(hour2, minutes2, seconds2))    
     
 
-    print("\nThis took %s seconds." % (time.time() - start_time))
+    print('\nThis took %s seconds.' % (time.time() - start_time))
     print('-'*40)
 
 
@@ -207,7 +209,7 @@ def user_stats(df):
         print('\n The earliest birth year:  {}\n The most recent birth year:  {}\n The most common birth year:  {}\n'.format(int(earliest_year), int(recent_year), int(most_common_birth_year)))  
 
           
-    print("\nThis took %s seconds." % (time.time() - start_time))
+    print('\nThis took %s seconds.' % (time.time() - start_time))
     print('-'*40)
 
 
