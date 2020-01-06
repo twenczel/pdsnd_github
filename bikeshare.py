@@ -20,7 +20,7 @@ def get_filters():
     """
     print('Hello! Let\'s explore some US bikeshare data!\n')
     # TO DO: get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
-    city = input("Please enter Chicago, New York City, or Washington for the city data you want to see.\n").lower()
+    city = input('Please enter Chicago, New York City, or Washington for the city data you want to see.\n').lower()
       
     while(True):
         if(city == 'chicago' or city == 'new york city' or city == 'washington'):
@@ -114,7 +114,7 @@ def time_stats(df, month, day):
     print('Most popular hour:  ' + str(most_common_hour))
 
 
-    print("\nThis took %s seconds." % (time.time() - start_time))
+    print('\nThis took %s seconds.' % (time.time() - start_time))
     print('-'*40)
 
 
@@ -139,7 +139,7 @@ def station_stats(df):
     print('\nThe most popular trip from start to end:  ', combination_station)
 
     
-    print("\nThis took %s seconds." % (time.time() - start_time))
+    print('\nThis took %s seconds.' % (time.time() - start_time))
     print('-'*40)
 
 
@@ -160,7 +160,7 @@ def trip_duration_stats(df):
     minutes = time1 // 60
     time1 %= 60
     seconds = time1
-    print('\nThe total travel duration is {} days {} hours {} minutes {} seconds'.format(day, hour, minutes, seconds))
+    print('\nThe total travel duration is {} days {} hours {} minutes {} seconds'.format(day, hour, minutes, round(seconds,2)))
     
     
     # TO DO: display mean travel time
@@ -173,10 +173,10 @@ def trip_duration_stats(df):
     minutes2 = time2 // 60
     time2 %= 60
     seconds2 = time2
-    print('\nThe average trip duration is {} hours {} minutes {} seconds'.format(hour2, minutes2, seconds2))    
+    print('\nThe average trip duration is {} hours {} minutes {} seconds'.format(hour2, minutes2, round(seconds2,2)))    
     
 
-    print("\nThis took %s seconds." % (time.time() - start_time))
+    print('\nThis took %s seconds.' % (time.time() - start_time))
     print('-'*40)
 
 
@@ -209,7 +209,7 @@ def user_stats(df):
         print('\n The earliest birth year:  {}\n The most recent birth year:  {}\n The most common birth year:  {}\n'.format(int(earliest_year), int(recent_year), int(most_common_birth_year)))  
 
           
-    print("\nThis took %s seconds." % (time.time() - start_time))
+    print('\nThis took %s seconds.' % (time.time() - start_time))
     print('-'*40)
 
 
