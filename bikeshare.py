@@ -160,7 +160,7 @@ def trip_duration_stats(df):
     minutes = time1 // 60
     time1 %= 60
     seconds = time1
-    print('\nThe total travel duration is {} days {} hours {} minutes {} seconds'.format(day, hour, minutes, seconds))
+    print('\nThe total travel duration is {} days {} hours {} minutes {} seconds'.format(day, hour, minutes, round(seconds,2)))
     
     
     # TO DO: display mean travel time
@@ -173,7 +173,7 @@ def trip_duration_stats(df):
     minutes2 = time2 // 60
     time2 %= 60
     seconds2 = time2
-    print('\nThe average trip duration is {} hours {} minutes {} seconds'.format(hour2, minutes2, seconds2))    
+    print('\nThe average trip duration is {} hours {} minutes {} seconds'.format(hour2, minutes2, round(seconds2,2)))    
     
 
     print('\nThis took %s seconds.' % (time.time() - start_time))
