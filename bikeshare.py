@@ -160,7 +160,7 @@ def trip_duration_stats(df):
     minutes = time1 // 60
     time1 %= 60
     seconds = time1
-    print('\nThe total travel duration is {} days {} hours {} minutes {} seconds'.format(day, hour, minutes, round(seconds,2)))
+    print('\nThe total travel duration is {:,} days {} hours {} minutes {} seconds'.format(day, hour, minutes, round(seconds,2)))
     
     
     # TO DO: display mean travel time
@@ -189,16 +189,16 @@ def user_stats(df):
     # TO DO: Display counts of user types
     num_of_subscribers = df['User Type'].str.count('Subscriber').sum()
     num_of_customers = df['User Type'].str.count('Customer').sum()
-    print('\nThe number of subscribers:  {}\n'.format(int(num_of_subscribers)))
-    print('The number of customers:  {}\n'.format(int(num_of_customers)))
+    print('\nThe number of subscribers:  {:,}\n'.format(int(num_of_subscribers)))
+    print('The number of customers:  {:,}\n'.format(int(num_of_customers)))
        
    
     # TO DO: Display counts of gender
     if('Gender' in df):
         m_count = df['Gender'].str.count('Male').sum()
         f_count = df['Gender'].str.count('Female').sum()
-        print('The number of males:  {}\n'.format(int(m_count)))
-        print('The number of females:  {}\n'.format(int(f_count)))
+        print('The number of males:  {:,}\n'.format(int(m_count)))
+        print('The number of females:  {:,}\n'.format(int(f_count)))
     
             
     # TO DO: Display earliest, most recent, and most common year of birth
